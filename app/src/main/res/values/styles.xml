@@ -2,10 +2,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="ActionBarStyle" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">?android:colorBackground</item>
+        <item name="android:background">?android:colorBackground</item>
     </style>
 
-    <style name="AppBarLayoutStyle" parent="Widget.Material3.AppBarLayout">
-        <item name="android:background">@color/colorAppBarLayout</item>
+    <style name="AppBarLayoutStyle" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="background">?android:colorBackground</item>
+        <item name="android:background">?android:colorBackground</item>
     </style>
 
     <style name="ClickableItemStyle">

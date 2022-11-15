@@ -26,7 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp"
-            android:background="@drawable/background"
             app:menu="@menu/nav_menu_bottom"
             app:labelVisibilityMode="labeled"
             app:itemHorizontalTranslationEnabled="false"
@@ -39,7 +38,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@drawable/background"
         app:headerLayout="@layout/layout_drawer_header"
         app:menu="@menu/nav_menu_left"/>
 </androidx.drawerlayout.widget.DrawerLayout>
