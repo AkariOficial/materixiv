@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="ActionBarStyle" parent="Widget.MaterialComponents.ActionBar.Primary">
-        <item name="background">@color/colorBackground</item>
-        <item name="android:background">@color/colorBackground</item>
+    <style name="ActionBarStyle" parent="Widget.Material3.ActionBar.Solid">
     </style>
 
-    <style name="AppBarLayoutStyle" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+    <style name="AppBarLayoutStyle" parent="Widget.Material3.AppBarLayout">
         <item name="android:background">@color/colorAppBarLayout</item>
     </style>
 
@@ -26,47 +24,35 @@
         <item name="android:foreground" tools:targetApi="m">?selectableItemBackgroundBorderless</item>
     </style>
 
-    <style name="Widget.OverflowMenuStyle" parent="Widget.MaterialComponents.PopupMenu.Overflow">
-        <item name="android:dropDownVerticalOffset">@dimen/popup_drop_down_offset</item>
-        <item name="android:popupElevation">@dimen/elevation_size</item>
+    <style name="Widget.OverflowMenuStyle" parent="Widget.Material3.PopupMenu.Overflow">
     </style>
 
-    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.Button</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Widget.Button.TextButton.Dialog</item>
+    <style name="AlertDialogTheme" parent="Theme.Material3.DayNight.Dialog.Alert">
     </style>
 
-    <style name="Widget.Button" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/colorAccent</item>
-        <item name="cornerRadius">@dimen/corner_radius_size</item>
+    <style name="Widget.Button" parent="Widget.Material3.Button">
     </style>
 
-    <style name="Widget.Button.TextButton.Dialog" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
-        <item name="android:textColor">@color/colorAccent</item>
+    <style name="Widget.Button.TextButton.Dialog" parent="Widget.Material3.Button.TextButton.Dialog">
     </style>
 
-    <style name="MaterialCardViewStyle" parent="Widget.MaterialComponents.CardView">
-        <item name="cardElevation">@dimen/elevation_size</item>
-        <item name="cardCornerRadius">@dimen/corner_radius_size</item>
+    <style name="MaterialCardViewStyle" parent="Widget.Material3.CardView.Outlined">
     </style>
 
-    <style name="BookmarkFloatingActionButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="elevation">@dimen/elevation_size</item>
-        <item name="backgroundTint">@color/bookmark_fab_bg_color_selector</item>
-        <item name="tint">@color/colorPrimary</item>
+    <style name="BookmarkFloatingActionButtonStyle" parent="Widget.Material3.FloatingActionButton.Primary">
     </style>
 
     <style name="AppBarStyle">
         <item name="android:background">?android:colorBackground</item>
-        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.ActionBar</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.ActionBar</item>
     </style>
     <style name="AppBarTransparentStyle">
-        <item name="android:theme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+        <item name="android:theme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
         <item name="android:background">@color/transparent</item>
         <item name="elevation">0dp</item>
     </style>
 
-    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+    <style name="TabLayoutStyle" parent="Widget.Material3.TabLayout">
         <item name="tabMode">scrollable</item>
         <item name="tabGravity">center</item>
         <item name="tabInlineLabel">false</item>
@@ -83,11 +69,11 @@
         <item name="cornerSize">@dimen/spacing_20dp</item>
     </style>
 
-    <style name="Widget.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+    <style name="Widget.BottomSheet.Modal" parent="Widget.Material3.BottomSheet.Modal">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.BottomSheet</item>
     </style>
 
-    <style name="ShapeAppearance.BottomSheet" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+    <style name="ShapeAppearance.BottomSheet" parent="ShapeAppearance.Material3.LargeComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">@dimen/spacing_20dp</item>\
         <item name="cornerSizeTopRight">@dimen/spacing_20dp</item>

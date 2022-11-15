@@ -8,7 +8,8 @@
     android:layout_marginVertical="@dimen/searchbar_margin_vertical"
     android:layout_marginHorizontal="@dimen/searchbar_margin_horizontal"
     app:layout_scrollFlags="scroll|snap|snapMargins|enterAlways"
-    style="?materialCardViewStyle">
+    style="?materialCardViewStyle"
+    app:cardCornerRadius="28.0dip">
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:orientation="horizontal"
