@@ -10,6 +10,11 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      
+    - name: Set up CMake 
+      uses: cmake/action-setup@v2
+      with:
+        cmake-version: '3.21'
 
     - name: Set up JDK
       uses: actions/setup-java@v2
