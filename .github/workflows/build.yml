@@ -10,11 +10,33 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
-    - name: Set up CMake 
-      uses: cmake/action-setup@v2
-      with:
-        cmake-version: '3.20'
+    
+    - name: Install Dependencies
+      run: |
+          sudo apt-get update && sudo apt-get -y upgrade
+          sudo apt-get -y install git make gcc bc bison flex libssl-dev ccache libelf-dev libncurses-dev
+          sudo apt-get -y install bc \
+            binutils-dev \
+            bison \
+            build-essential \
+            ca-certificates \
+            ccache \
+            clang \
+            cmake \
+            curl \
+            file \
+            flex \
+            git \
+            libelf-dev \
+            libssl-dev \
+            lld \
+            make \
+            ninja-build \
+            python3-dev \
+            texinfo \
+            u-boot-tools \
+            xz-utils \
+            zlib1g-dev
 
     - name: Set up JDK
       uses: actions/setup-java@v2
