@@ -1,0 +1,10 @@
+<lint>
+    <!-- Outras configurações do lint -->
+
+    <!-- Habilita a regra MonochromeLauncherIcon -->
+    <issue id="MonochromeLauncherIcon">
+        <ignore path="res/drawable/ic_launcher_monochrome.xml" />
+    </issue>
+
+    <!-- Outras configurações do lint -->
+</lint>
