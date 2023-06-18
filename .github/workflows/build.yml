@@ -24,6 +24,11 @@ jobs:
 
       - uses: gradle/gradle-build-action@v2
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: |
+          chmod +x gradlew 
+
       - name: Build with Gradle
-        run: ./gradlew build
+        run: |
+          ./gradlew build
+          cat /home/runner/work/materixiv/materixiv/app/build/intermediates/lint_intermediate_text_report/debug/lint-results-debug.txt    
+          
