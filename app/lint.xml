@@ -3,7 +3,7 @@
 
     <!-- Habilita a regra MonochromeLauncherIcon -->
     <issue id="MonochromeLauncherIcon">
-        <ignore path="res/drawable/ic_launcher_monochrome.xml" />
+        <ignore path="app/src/main/res/drawable/ic_launcher_monochrome.xml" />
     </issue>
 
     <!-- Outras configurações do lint -->
