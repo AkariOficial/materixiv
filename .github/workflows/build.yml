@@ -29,6 +29,6 @@ jobs:
 
       - name: Build with Gradle
         run: |
+          ./gradlew configure
           ./gradlew build
-          cat /home/runner/work/materixiv/materixiv/app/build/intermediates/lint_intermediate_text_report/debug/lint-results-debug.txt    
-          
+
